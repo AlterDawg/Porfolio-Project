@@ -2,18 +2,25 @@
   padding: 0;
   margin: 0;
 }
+@font-face {
+  font-family: Inter;
+  src: url(font/Inter/static/Inter_18pt-Medium.ttf);
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(font/Montserrat/static/Montserrat-Regular.ttf);
+}
 body {
-  height: 100vh;
+  height: 300vh;
 }
 .container {
-  min-height: 88vh;
+  min-height: 300vh;
   min-width: 100vw;
+  background-color: #e7e7e7;
+  display: flex;
 }
 .main {
-  overflow: auto;
-  padding-bottom: 100px;
   background-color: #e7e7e7;
-  height: 75vh;
 }
 .nav {
   background-color: #071013ff;
@@ -21,22 +28,22 @@ body {
   width: 100vw;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   position: relative;
-  text-align: center;
+  flex-direction: row;
 }
-.links {
-  padding: 13px 15px 18px;
+.link {
+  padding: 13px 15px 13px;
   border-radius: 3px;
-  text-decoration: underline;
+  text-decoration: none;
   font-size: 18px;
   color: #e7e7e7;
+  font-family: Montserrat;
 }
 .footer {
   background-color: #071013ff;
   position: relative;
   height: 6vh;
-
   clear: both;
   width: 100vw;
 }
