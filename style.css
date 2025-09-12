@@ -10,6 +10,14 @@
   font-family: Montserrat;
   src: url(font/Montserrat/static/Montserrat-Regular.ttf);
 }
+@font-face {
+  font-family: Montserrat-B;
+  src: url(font/Montserrat/static/Montserrat-Medium.ttf);
+}
+@font-face {
+  font-family: Montserrat-L;
+  src: url(font/Montserrat/static/Montserrat-Light.ttf);
+}
 body {
   height: 300vh;
 }
@@ -21,6 +29,8 @@ body {
 }
 .main {
   background-color: #e7e7e7;
+  min-height: 100vh;
+  display: flex;
 }
 .nav {
   background-color: #071013ff;
@@ -49,11 +59,52 @@ body {
 }
 
 a {
-  color: #fff;
+  color: #e7e7e7;
   text-decoration: none;
   margin-bottom: 0.5rem;
 }
 a:hover {
   color: red;
   transition: 0.3s ease-out;
+}
+.name {
+  font-size: calc(6vw + 1em);
+  font-family: Montserrat;
+}
+.title {
+  font-size: calc(1vw + 1em);
+  font-family: Montserrat;
+}
+.description {
+  font-size: calc(0.5vw + 0.5em);
+  font-family: Montserrat;
+}
+.main-text {
+  display: flex;
+  margin-top: 6vw;
+  margin-left: 10vw;
+  flex-direction: column;
+}
+#main-1 {
+  display: flex;
+}
+#main-2 {
+  display: flex;
+}
+#main-3 {
+  display: flex;
+}
+.button {
+  background-color: red;
+}
+.button:hover {
+  transition: all 0.2s ease 0s;
+  background-color: rgb(255, 96, 96);
+}
+.temp-box {
+  margin: 4vw;
+
+  width: 30vw;
+  height: 70vh;
+  background-color: #071013ff;
 }
