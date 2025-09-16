@@ -23,7 +23,7 @@ body {
 }
 .container {
   min-height: 300vh;
-  min-width: 100vw;
+  width: 100%;
   background-color: #e7e7e7;
   display: flex;
 }
@@ -31,11 +31,14 @@ body {
   background-color: #e7e7e7;
   min-height: 100vh;
   display: flex;
+  width: 100%;
+  max-width: 100%;
 }
 .nav {
   background-color: #071013ff;
   height: 6vh;
-  width: 100vw;
+  width: 100%;
+  max-width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -49,13 +52,19 @@ body {
   font-size: 18px;
   color: #e7e7e7;
   font-family: Montserrat;
+  margin-bottom: 0.5rem;
+}
+.link:hover {
+  color: red;
+  transition: 0.3s ease-out;
 }
 .footer {
   background-color: #071013ff;
   position: relative;
   height: 6vh;
   clear: both;
-  width: 100vw;
+  width: 100%;
+  max-width: 100%;
 }
 
 a {
@@ -63,10 +72,7 @@ a {
   text-decoration: none;
   margin-bottom: 0.5rem;
 }
-a:hover {
-  color: red;
-  transition: 0.3s ease-out;
-}
+
 .name {
   font-size: calc(6vw + 1em);
   font-family: Montserrat;
@@ -95,16 +101,27 @@ a:hover {
   display: flex;
 }
 .button {
-  background-color: red;
+  background-color: #b80c09ff;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 16vh;
+  font-size: calc(0.4vw + 1em);
+  width: 150px;
+  height: 40px;
+  line-height: 40px;
+  cursor: pointer;
+  font-family: Montserrat;
+  color: #e7e7e7;
 }
 .button:hover {
   transition: all 0.2s ease 0s;
-  background-color: rgb(255, 96, 96);
+  background-color: red;
 }
-.temp-box {
-  margin-top: 4vw;
-
-  width: 30vw;
-  height: 70vh;
-  background-color: #071013ff;
+#img-1 {
+  width: 35vw;
+  height: auto;
+}
+.mainImage {
+  margin: 5vh 10vw;
+  box-sizing: border-box;
 }
